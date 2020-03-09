@@ -1,0 +1,59 @@
+---
+layout: compress
+---
+<html lang="{{ page.lang | default: site.lang | default: "en_US" }}">
+
+  {% include head.html %}
+
+  <body class="site">
+
+    {% if site.google_tag_manager %}
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+    {% endif %}
+
+    {% include header.html %}
+
+    <div class="hero lazyload" data-bg="{{site.url}}/assets/img/posts/sleek_lg.jpg">
+      <div class="hero__wrap">
+        <h1 class="hero__title">Mingyi Ma</h1>
+        <p class="hero__meta"><a href="javascript:;">中文版></a></p>
+      </div>
+    </div>
+
+    <main class="site__content">
+      <section class="blog">
+        <div class="container" style="padding-bottom: 5em;">
+          <br>
+          <strong>主要项目：</strong><span style="color:#696969;">(这些项目是独立完成的，或者项目中大部分内容是我自己完成的写在了这里)</span>
+          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog" style="padding-top: 2em;">
+
+            {% for post in site.posts %}
+              {% include card.html %}
+            {% endfor %}
+
+            <!-- {% include pagination.html %} -->
+          </div>
+          <br>
+          <strong>参与项目：</strong><span style="color:#696969;">(这些项目由别人完成主要工作，或者一些因为各种原因中断的项目写在了这里)</span>
+          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog" style="padding-top: 2em;">
+
+            {% for post in site.posts %}
+              {% include cardsub.html %}
+            {% endfor %}
+
+            <!-- {% include pagination.html %} -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
