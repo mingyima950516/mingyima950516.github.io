@@ -7,9 +7,10 @@ featured-img: factory
 
 ## Background 
 
-This project was developed for a factory in Suzhou China. The computer vision algorithm in this project is similar to the project "Customer Statistics and Identification System". But this project focus on early warning and employee movement route statistics. The system identifies the employees who should not enter a certain area. And record and analyze each employee's daily movement path in the factory.
+This project was developed for a factory in Suzhou China. The computer vision algorithm in this project is similar to the project "Customer Statistics and Identification System". But this project focus on early warning and employee movement route statistics. The system identifies employees who should not enter a certain area. And record and analyze each employee's daily movement path in the factory.
 
-In this system, multiple cameras in the factory push video streams to the central server with GPU. Then the service will analyze the video frame. By combine detection and tracker, we can distinguish each single object. After that the face recognition algorithm will generate face-id vector. Currently we are planning to improve the system with Re-ID technology. The purpose is to improve the recall rate of early warning.
+In this system, multiple cameras in the factory push video streams to the central server with GPU. Then the service will analyze the video frame. By combine detection and tracker, we can distinguish each single object. After that the face recognition algorithm will generate face-id vector.
+
 
 ## Responsibilities
 

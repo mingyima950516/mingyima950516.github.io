@@ -4,11 +4,11 @@ title: "WebGL development framework"
 featured-img: web3D
 ---
 
-During this time, I developed a WebGL development framework. This system is similar to Unity 3D on the web side, which can perform model editing, game manufacturing, scene layout, etc.
+This is a web-based 3D development framework with similar functionality to Unity 3D. The difference is that you can import perform model import, texture editing, scene layout and other operations through web page directly. And can directly publish WebGL applications. Make it easier to create 3D scenes on the web side without writing too much WebGL code.
 
-Although Unity 3D can be published to the web, there are many disadvantages, such as difficulty in interacting with the web and slow loading speed. Compared with Unity 3D, this 3D effect written directly on the web side has faster loading speed, lower rendering consumption, and more flexibility in web pages. At the same time, I made many optimizations to increase the loading speed of models and texture. For example, load low quality resources first and then high quality.
+Although Unity 3D can be published to the web, there are also many disadvantages, such as difficulty in interacting with the web and slow loading speed. Compared with Unity 3D, this 3D framework has a faster loading speed, lower rendering consumption, and more flexibility in web pages. At the same time, I made many optimizations to increase the loading speed of models and texture. For example, load low quality resources first and then high quality.
 
-By using this system, you can easily build a native webgl application. This reduces the difficulty of previously writing code to develop webgl. You can use this framework to directly develop 3d games and 3d display on the web side, and publish them in the website.
+By using this system, you can easily build a native WebGL application. This will reduce the difficulty of writing code to develop webgl. You can use this framework to directly develop 3d games and 3d display on the web side, then publish them.
 
 (This system is still under development. Most of the work has been done.)
 
